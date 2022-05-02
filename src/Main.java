@@ -37,6 +37,8 @@ public class Main {
         Squirrel s6 = new Squirrel(new int[] {-2});
         System.out.println(s6.maxNuts());
 
+        System.out.println("test");
+
 
     }
 }
