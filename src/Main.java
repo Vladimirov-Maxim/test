@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Bax_fix");
-        System.out.println("Bag_fix_2");
 
     }
 }
