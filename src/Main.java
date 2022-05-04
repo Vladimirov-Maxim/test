@@ -24,7 +24,7 @@ public class Main {
                 result.append(",");
             }
 
-            result.append(number.substring(start, end));
+            result.append(number, start, end);
 
         }
 
