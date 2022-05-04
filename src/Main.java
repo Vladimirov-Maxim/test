@@ -1,10 +1,12 @@
 import java.util.Arrays;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(getNumberWithSeparator("12345678"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(getNumberWithSeparator(scanner.nextLine()));
     }
 
     public static String getNumberWithSeparator(String number) {
@@ -24,7 +26,7 @@ public class Main {
                 result.append(",");
             }
 
-            result.append(number, start, end);
+            result.append(stringForHandling, start, end);
 
         }
 
