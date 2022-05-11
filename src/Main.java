@@ -1,10 +1,25 @@
+import Game.Barracks;
+import Game.Knight;
+import Game.Rifleman;
+import Game.Soldier;
+
 import java.util.Arrays;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(getNumberWithSeparator("12345678"));
+
+
+        Barracks barracks = new Barracks();
+        barracks.add(new Soldier("Пехотинец"));
+        barracks.add(new Knight("Рыцарь"));
+        barracks.add(new Rifleman("Мушкетер"));
+
+        barracks.visit();
+
+
     }
 
     public static String getNumberWithSeparator(String number) {
@@ -31,5 +46,6 @@ public class Main {
         return result.reverse().toString();
 
     }
+
 
 }
