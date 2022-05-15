@@ -2,6 +2,7 @@ import Game.Barracks;
 import Game.Knight;
 import Game.Rifleman;
 import Game.Soldier;
+import Game2.*;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,15 +12,13 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
 
+        Battle battle = new Battle();
+        battle.add(new Zombie("Alice"));
+        battle.add(new Human("Vasiliy"));
+        battle.add(new GiantSnake("Kaa"));
+        battle.add(new Tower("Big Ben"));
 
-        Barracks barracks = new Barracks();
-        barracks.add(new Soldier("Пехотинец"));
-        barracks.add(new Knight("Рыцарь"));
-        barracks.add(new Rifleman("Мушкетер"));
-
-        barracks.visit();
-
-
+        battle.start();
     }
 
     public static String getNumberWithSeparator(String number) {
